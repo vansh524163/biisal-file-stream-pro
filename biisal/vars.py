@@ -12,10 +12,10 @@ bisal_grp = "https://t.me/joinnowearn"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
-    name = str(getenv('name', 'Proton_file_to_link_bot'))
+    API_ID = int(getenv('API_ID', '21956488'))
+    API_HASH = str(getenv('API_HASH', '812529f879f06436925c7d62eb49f5d1'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6992436830:AAHxSurOyULZv-Lv2nGtB38kXeHPLsuaeCg'))
+    name = str(getenv('name', 'cinema4u_vansh_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001524622686'))
