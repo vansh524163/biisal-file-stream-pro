@@ -13,18 +13,21 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <style>
     body {
         background: #0e0d0d;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     .vanshfontlink {
         font-family: 'Nunito', sans-serif;
         font-size: 18px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         color: rgb(255, 120, 87);
     }
     
@@ -34,12 +37,12 @@
     
     .vanshlink {
         color: aqua;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     .vanshjaishreeram {
         color: rgb(255, 111, 44);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     button {
@@ -50,7 +53,7 @@
         border: none;
         border-radius: 5px;
         letter-spacing: 4px;
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         overflow: hidden;
         transition: 0.5s;
         cursor: pointer;
@@ -69,11 +72,11 @@
     
     .vanshmain {
         color: white;
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     .vanshsocial {
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         color: aliceblue;
         font-size: 22px;
     }
@@ -178,7 +181,7 @@
     }
     
     .vanshheadline {
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         font-weight: bold;
         font-size: 25px;
     }
@@ -186,12 +189,12 @@
     .vanshfillnow {
         color: #da3f51;
         font-size: 20px;
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     .vanshfilename {
         color: #ffffff;
-        font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Josefin Sans", sans-serif;
     }
     
     #copyright-text {
@@ -205,6 +208,10 @@
     
     .link {
         color: #ff001e;
+    }
+    
+    .cinema4u {
+        font-family: "Josefin Sans", sans-serif;
     }
 </style>
 
@@ -234,7 +241,11 @@
                     <button onclick="downloadVideo()">Download Link</button>
                 </div>
     </center>
-    <br />
+    <center>
+        <a href="https://cinema4u.xyz">
+            <h3 class="cinema4u" style="color: white;">Movie Website Cinema4u</h3>
+        </a>
+    </center>
     <br />
     <center>
         <h2 class="vanshheadline">Disclaimer:</h2>
@@ -501,17 +512,16 @@
             function downloadVideo() {
                 // Get the current window pathname
                 const pathname = window.location.pathname;
-                
+
                 // Get the query string portion of the URL
                 const queryString = window.location.search;
-                
+
                 // Construct the download URL with pathname and query string
                 const downloadUrl = `https://demobtos-27f3d353037d.herokuapp.com/${pathname}${queryString}`;
-            
+
                 // Open the new URL in a new window or tab
                 window.open(downloadUrl, "_blank");
             }
-            
         </script>
 </body>
 
